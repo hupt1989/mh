@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="jdbc:mysql://112.126.77.194:3306/mission_help"/>
+    <property name="com.mysql.jdbc.Driver"/>
+    <property name="xxx"/>
+    <property name="maidu1"/>
+    <property name="connection.url">jdbc:mysql://112.126.77.194:3306/mission_help</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.mh.entity.AuthorityEntity"/>
+    <mapping class="com.mh.entity.RoleEntity"/>
+    <mapping class="com.mh.entity.RoleAuthorityEntity"/>
+    <mapping class="com.mh.entity.UserEntity"/>
+    <mapping class="com.mh.entity.UserRoleEntity"/>
+    <mapping class="com.mh.entity.MhCategoryMissionRelateEntity"/>
+    <mapping class="com.mh.entity.MhMissionCategoryEntity"/>
+    <mapping class="com.mh.entity.MhMissionDetailEntity"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
